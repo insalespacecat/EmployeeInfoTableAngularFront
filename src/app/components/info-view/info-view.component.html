@@ -1,0 +1,11 @@
+<mat-grid-list cols="5" rowHeight="300px">
+  <mat-grid-tile *ngFor="let stock of stocksHolder">
+    <app-stock-card [info]="stock"></app-stock-card>
+  </mat-grid-tile>
+  <mat-grid-tile *ngIf="!employeeHolder">
+    <p>Looks like there are no employees yet... You can add an employee in "Edit" menu</p>
+  </mat-grid-tile>
+  <mat-grid-tile *ngFor="let employee of employeeHolder">
+    <app-employee-card [info]="employee"></app-employee-card>
+  </mat-grid-tile>
+</mat-grid-list>

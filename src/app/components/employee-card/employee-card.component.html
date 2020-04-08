@@ -1,0 +1,21 @@
+<mat-card class="employeeCard">
+  <mat-card-title>
+    <h3>
+    {{info.name}}
+    <button mat-icon-button [matMenuTriggerFor]="menu" aria-label="Toggle menu">
+      <mat-icon>more_horiz</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu" xPosition="after">
+      <button mat-menu-item (click)="openDialog()">Edit</button>
+      <button mat-menu-item>Delete</button>
+    </mat-menu>
+    </h3>
+  </mat-card-title>
+  <mat-card-content>
+    <h4>
+      {{info.position}}<br/>
+      {{info.salary | currency: 'USD' : 'symbol' : '.2'}}<br/>
+      {{info.workplace}}<br/>
+    </h4>
+  </mat-card-content>
+</mat-card>

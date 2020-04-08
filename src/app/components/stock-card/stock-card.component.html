@@ -1,0 +1,8 @@
+<mat-card class="stocksCard" [ngClass] = "{increase: isPositive(), decrease: isNegative()}">
+  <mat-card-content>
+    {{info.symbol.toUpperCase()}}
+    {{info.lastTradePriceOnly | currency: 'USD': 'symbol' : '.2'}}
+    {{info.changeInPercent | percent: '.2'}}
+    {{info.change | currency: 'USD': 'symbol' : '.2'}}
+  </mat-card-content>
+</mat-card>

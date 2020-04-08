@@ -1,0 +1,12 @@
+.stocksCard{
+  background: dimgrey;
+  color: #fff;
+}
+.stocksCard.increase{
+  background: aquamarine;
+  color: #fff;
+}
+.stocksCard.decrease{
+  background: crimson;
+  color: #fff;
+}
