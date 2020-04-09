@@ -1,4 +1,4 @@
-<mat-card class="employeeCard">
+<mat-card class="employeeCard" *ngIf="info.name != 'deleted'">
   <mat-card-title>
     <h3>
     {{info.name}}
@@ -6,8 +6,8 @@
       <mat-icon>more_horiz</mat-icon>
     </button>
     <mat-menu #menu="matMenu" xPosition="after">
-      <button mat-menu-item (click)="openDialog()">Edit</button>
-      <button mat-menu-item>Delete</button>
+      <button mat-menu-item (click)="openEditDialog()">Edit</button>
+      <button mat-menu-item (click)="openDeleteDialog()">Delete</button>
     </mat-menu>
     </h3>
   </mat-card-title>

@@ -14,7 +14,7 @@ import {MatCardModule} from '@angular/material/card';
 import { HttpClientModule} from '@angular/common/http';
 import { InfoViewComponent } from './components/info-view/info-view.component';
 import { AppRoutes } from './app.routes';
-import { AddNewEmployeeCardComponent } from './components/add-new-employee-card/add-new-employee-card.component';
+import { AddNewEmployeeDialogComponent } from './components/add-new-employee-dialog/add-new-employee-dialog.component';
 import {FormsModule} from '@angular/forms';
 import {MatInputModule} from '@angular/material/input';
 import {MatDividerModule} from '@angular/material/divider';
@@ -23,6 +23,8 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatDialogModule} from '@angular/material/dialog';
 import { EmployeeEditDialogComponent } from './components/employee-edit-dialog/employee-edit-dialog.component';
 import {MatFormFieldModule} from '@angular/material/form-field';
+import { EmployeeDeleteDialogComponent } from './components/employee-delete-dialog/employee-delete-dialog.component';
+import { AboutPageComponent } from './components/about-page/about-page.component';
 
 @NgModule({
   declarations: [
@@ -31,8 +33,10 @@ import {MatFormFieldModule} from '@angular/material/form-field';
     EmployeeCardComponent,
     StockCardComponent,
     InfoViewComponent,
-    AddNewEmployeeCardComponent,
+    AddNewEmployeeDialogComponent,
     EmployeeEditDialogComponent,
+    EmployeeDeleteDialogComponent,
+    AboutPageComponent,
   ],
   imports: [
     BrowserModule,

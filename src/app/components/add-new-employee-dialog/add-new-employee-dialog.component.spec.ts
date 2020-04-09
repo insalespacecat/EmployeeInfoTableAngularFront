@@ -1,20 +1,20 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { AddNewEmployeeCardComponent } from './add-new-employee-card.component';
+import { AddNewEmployeeDialogComponent } from './add-new-employee-dialog.component';
 
 describe('AddNewEmployeeCardComponent', () => {
-  let component: AddNewEmployeeCardComponent;
-  let fixture: ComponentFixture<AddNewEmployeeCardComponent>;
+  let component: AddNewEmployeeDialogComponent;
+  let fixture: ComponentFixture<AddNewEmployeeDialogComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ AddNewEmployeeCardComponent ]
+      declarations: [ AddNewEmployeeDialogComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(AddNewEmployeeCardComponent);
+    fixture = TestBed.createComponent(AddNewEmployeeDialogComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

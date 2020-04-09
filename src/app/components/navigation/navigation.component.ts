@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import {InfoViewComponent} from '../info-view/info-view.component';
 
 @Component({
   selector: 'app-navigation',
@@ -8,7 +9,6 @@ import { Component, OnInit } from '@angular/core';
 export class NavigationComponent implements OnInit {
 
   constructor() { }
-
   ngOnInit(): void {
   }
 
