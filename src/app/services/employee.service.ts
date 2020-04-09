@@ -13,16 +13,16 @@ export interface EmployeeInterface {
 })
 export class EmployeeService {
   getEmployees() {
-    return this.http.get<Array<EmployeeInterface>>('http://localhost:9999/query/getEmployees');
+    return this.http.get<Array<EmployeeInterface>>('https://employee-info-table-back.herokuapp.com/query/getEmployees');
   }
   postEmployee(employee: EmployeeInterface) {
-    return this.http.post('http://localhost:9999/query/addEmployee', employee);
+    return this.http.post('https://employee-info-table-back.herokuapp.com/query/addEmployee', employee);
   }
   patchEmployee(id: number, employee: EmployeeInterface) {
-    return this.http.patch('http://localhost:9999/query/patch/' + id, employee);
+    return this.http.patch('https://employee-info-table-back.herokuapp.com/query/patch/' + id, employee);
   }
   deleteEmployee(id: number) {
-    return this.http.delete('http://localhost:9999/query/delete/' + id);
+    return this.http.delete('https://employee-info-table-back.herokuapp.com/query/delete/' + id);
   }
 
   constructor(private http: HttpClient) { }
