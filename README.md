@@ -1,3 +1,6 @@
+Angular Front End for EmployeeInfoTable project! Check it out on Heroku https://employee-info-table.herokuapp.com/.
+
+
 # EmployeeInfoTable
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.4.
