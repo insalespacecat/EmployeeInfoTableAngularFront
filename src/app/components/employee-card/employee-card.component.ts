@@ -1,8 +1,9 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {EmployeeInterface, EmployeeService} from '../../services/employee.service';
+import { EmployeeService} from '../../services/employee.service';
 import {MatDialog} from '@angular/material/dialog';
 import {EmployeeEditDialogComponent} from '../employee-edit-dialog/employee-edit-dialog.component';
 import {EmployeeDeleteDialogComponent} from '../employee-delete-dialog/employee-delete-dialog.component';
+import {EmployeeInterface} from '../../interfaces/employee-interface';
 
 @Component({
   selector: 'app-employee-card',

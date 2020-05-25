@@ -1,5 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {StockInterface} from '../../services/stocks.service';
+import {StockInterface} from '../../interfaces/stock-interface';
 
 @Component({
   selector: 'app-stock-card',
